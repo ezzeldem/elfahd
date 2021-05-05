@@ -1,0 +1,90 @@
+// color
+$black-color: #000;
+$min-color: #2b4f67;
+$sub-color: #5e7385;
+$gray-color: #d9dce1;
+$gold-color: #f08d20;
+$white-color:#fff;
+$red-color:red;
+
+
+// color
+
+
+
+// text
+$arabc_font:'Cairo',sans-serif;
+$english_font:'Open Sans',sans-serif;
+$sub_text: "Lobster",cursive;
+
+// text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$elvetoClip : (elev_intro-2 : url(#clip-path), elev_intro-4 : url(#clip-path-2), elev_intro-5 : url(#clip-path-3));
+$elvetor_CLass_name: (elev_intro-1 : none, elev_intro-3 : $min-color, elev_intro-6 : $white-color, elev_intro-7 : $sub-color, elev_intro-8 : $gold-color, elev_intro-9 : $gray-color, elev_intro-10 : $sub-color);
+// each
+
+@each $class_name,
+$propName in $elvetoClip {
+    .#{$class_name} {
+        clip-path: #{$propName};
+    }
+}
+
+@each $class_name,
+$color_var in $elvetor_CLass_name {
+    .#{$class_name} {
+        fill: #{$color_var};
+    }
+}
+
+
+
+
+
+
+
+
+
+// body
+@mixin pageDir ($dir) {
+    @if $dir==rtl {
+        html[dir="#{$dir}"] & {
+            font-family: $arabc_font;
+        }
+    }@else {
+        html[dir="#{$dir}"] & {
+            font-family: $english_font;
+        }
+    }
+}
+
+body {
+    @include pageDir(ltr);
+    @include pageDir(rtl);
+}

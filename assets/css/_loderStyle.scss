@@ -1,0 +1,422 @@
+.loder_page {
+    display: none !important;
+}
+
+
+
+
+
+// var
+
+// var
+
+.loder_img_1 {
+    fill: $min-color;
+}
+
+.loder_img_2 {
+    fill: #151d38;
+}
+
+.loder_img_3 {
+    fill: #9ea3af;
+}
+
+.loder_img_4 {
+    fill: #9297a5;
+}
+
+.loder_img_5 {
+    fill: #767e91;
+}
+
+.loder_img_6 {
+    fill: #f9d1ca;
+}
+
+.loder_img_7 {
+    fill: #fae0d6;
+}
+
+.loder_img_8 {
+    fill: #c6726a;
+}
+
+.loder_img_9 {
+    fill: #d3b18f;
+}
+
+.loder_img_10 {
+    fill: #d6e9f6;
+}
+
+.loder_img_11 {
+    fill: #7ea567;
+}
+
+.loder_img_12 {
+    fill: #fff;
+}
+
+.loder_img_13 {
+    fill: #aece9d;
+}
+
+.loder_img_14 {
+    fill: #e27f71;
+}
+
+.loder_img_15 {
+    fill: #677082;
+}
+
+.loder_img_16 {
+    fill: #46506b;
+}
+
+.loder_img_17 {
+    fill: #2d333f;
+}
+
+.loder_img_18 {
+    fill: #f78d89;
+}
+
+.loder_img_19 {
+    fill: #ced8dc;
+}
+
+.loder_img_20 {
+    fill: #ff8da0;
+}
+
+.loder_img_21 {
+    fill: #ffd9e7;
+}
+
+.loder_img_22 {
+    fill: #525e72;
+}
+
+.loder_img_23 {
+    fill: rgba($min-color, 1);
+}
+
+.loder_img_24 {
+    fill: rgba($red_color, 1);
+}
+
+.loder_page {
+    background-color: rgba($min-color, 1);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s all ease-in-out;
+
+    z-index: 99999;
+
+    &.hiddinTime {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(4);
+    }
+
+    &::after {
+        html[dir="rtl"] & {
+            content: "مرحبا";
+        }
+
+        html[dir="ltr"] & {
+            content: "Welcome";
+        }
+
+        font-size: 50px;
+        top: 50%;
+        left: 50%;
+        color: $min-color;
+        position: absolute;
+        opacity: 0;
+        font-weight: 600;
+        transform: translate(-68%, -50%);
+        animation: show_word 0.4s 3.8s cubic-bezier(0, 0.39, 0.9, 0.53) forwards;
+    }
+
+    #loderImg {
+        transition: 1s all ease-in-out;
+        transform: scale(0.59);
+    }
+
+    #arrow_up {
+        animation: fill_cheng 1s ease-in-out infinite alternate;
+    }
+
+    #arrow_top {
+        transform-origin: center;
+        transform-box: fill-box;
+        animation: arrow_rotet 2.8s cubic-bezier(0, 0.39, 0.9, 0.53) forwards;
+    }
+
+    #elevator_circle_color {
+        .circle_color_gold {
+            animation: 0.4s fill_cheng_circle ease-in-out forwards;
+        }
+
+        @for $i from 1 through 8 {
+            .circle_color_gold {
+                &:nth-child(#{$i}) {
+                    animation-delay: $i * (2.5s / 8);
+                }
+            }
+        }
+    }
+
+    .door_fream {
+        overflow: hidden;
+    }
+
+    .door_right {
+        fill: #9ea3af;
+        transform-origin: right;
+        transform-box: fill-box;
+        animation: opne_door_right 1s 2.4s linear forwards;
+        transform: translate(-116px, -31px);
+    }
+
+    .door_left {
+        fill: #9ea3af;
+        transform-origin: left;
+        transform-box: fill-box;
+        animation: opne_door_left 1s 2.4s linear forwards;
+        transform: translate(-410px, -31px);
+    }
+}
+
+.op-0 {
+    animation: show_word 1s 4.2s linear forwards reverse;
+}
+
+
+
+
+
+
+
+
+
+
+.intro_img {
+    text-align: center;
+
+    svg {
+        height: 500px;
+        overflow: visible;
+        margin: 0 auto;
+
+        .box_1 {
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transform-box: fill-box;
+            animation: scale_chenge 1s infinite linear alternate;
+        }
+
+        .light_box {
+            animation: light_boxA 1s infinite linear alternate;
+        }
+
+        .fill_color {
+            animation: fill_colorA 1s infinite linear alternate;
+        }
+
+        #elvetor_body {
+            transform: translate(3px, -37px);
+            animation: door_down 3s 5s forwards linear;
+        }
+
+        #door_left {
+            transform-origin: left;
+            transform-style: preserve-3d;
+            transform-box: fill-box;
+            animation: opne_door_scal 4s 7.5s forwards ease-in-out;
+        }
+
+        #door_right {
+            transform-origin: right;
+            transform-style: preserve-3d;
+            transform-box: fill-box;
+            animation: opne_door_scal 4s 7.5s forwards ease-in-out;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// keyframes
+
+@keyframes show_word {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes opne_door_left {
+    0% {
+        transform: translate(-410px, -31px) scaleX(1);
+        // opacity:1;
+    }
+
+    100% {
+        // opacity: 0;
+        transform: translate(-410px, -31px) scaleX(0);
+    }
+}
+
+@keyframes opne_door_right {
+    0% {
+        transform: translate(-116px, -31px) scaleX(1);
+        // opacity:1;
+    }
+
+    100% {
+        // opacity: 0;
+        transform: translate(-116px, -31px) scaleX(0);
+    }
+}
+
+@keyframes fill_cheng {
+    0% {
+        fill: rgba($red_color, 0);
+    }
+
+    100% {
+        fill: rgba($red_color, 1);
+    }
+}
+
+@keyframes fill_cheng_circle {
+    0% {
+        fill: rgba($gold-color, 1);
+    }
+
+    100% {
+        fill: rgba($gold-color, 0);
+    }
+}
+
+@keyframes arrow_rotet {
+    0% {
+        transform: rotate(-60deg) translate(-15px, 0px);
+    }
+
+    14% {
+        transform: rotate(-25deg) translate(-11px, 4px);
+    }
+
+    28% {
+        transform: rotate(4deg) translate(-4px, -1px);
+    }
+
+    42% {
+        transform: rotate(30deg) translate(7px, -5px);
+    }
+
+    56% {
+        transform: rotate(57deg) translate(11px, -17px);
+    }
+
+    70% {
+        transform: rotate(91deg) translate(6px, -28px);
+    }
+
+    84% {
+        transform: rotate(119deg) translate(4px, -33px);
+    }
+
+    100% {
+        transform: rotate(119deg) translate(4px, -33px);
+    }
+}
+
+@media (max-width: 772px) {
+    .loder_page {
+        &::after {
+            font-size: 20px;
+        }
+
+        #loderImg {
+            transform: scale(1);
+        }
+    }
+}
+
+
+
+@keyframes door_down {
+    0% {
+        transform: translate(3px, -37px);
+    }
+
+    100% {
+        transform: translate(3px, 0px);
+    }
+}
+
+@keyframes opne_door_scal {
+    0% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+}
+
+@keyframes scale_chenge {
+    0% {
+        transform: scale(0.7);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes light_boxA {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fill_colorA {
+    0% {
+        fill: $white-color;
+    }
+
+    100% {
+        fill: #feaf12;
+    }
+}
