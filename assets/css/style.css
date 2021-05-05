@@ -1055,6 +1055,63 @@ html[dir="ltr"] .loder_page::after {
   display: none;
 }
 
+/*start contact_section*/
+.contact_section {
+  margin-top: 30px;
+}
+
+.contact_section .contact_img {
+  margin-top: 60px;
+}
+
+.contact_section .form input[type="text"] {
+  color: #2b4f67;
+  width: 100%;
+  border: 1px solid #2b4f67;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact_section .form input[type="email"] {
+  color: #2b4f67;
+  width: 100%;
+  border: 1px solid #2b4f67;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact_section .form textarea {
+  color: #2b4f67;
+  width: 100%;
+  border: 1px solid #2b4f67;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 150px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact_section .form button {
+  color: #2b4f67;
+  padding: 15px 25px;
+  border: 1px solid #2b4f67;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.contact_section .form button:hover {
+  background-color: #2b4f67;
+  font-weight: bold;
+  color: #fff;
+}
+
 .min_footer {
   padding: 60px 0;
   background-color: #2b4f67;
@@ -1733,3 +1790,4 @@ html[dir="ltr"] .loder_page::after {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
+/*# sourceMappingURL=style.css.map */
