@@ -663,6 +663,32 @@
 
 
 
+// contact_dit
+
+
+.contact_dit{
+    ul{
+        li{
+            margin: 0 0 20px;
+            a{
+                font-size: 20px;
+                color: rgba($min-color, 1);
+                font-weight: 600;
+                @extend%trans-4;
+                &:hover{
+                    color: rgba($black-color, 1);
+                }
+                i{
+                    font-size: 16px;
+                    margin: 0 4px;
+                }
+            }
+        }
+    }
+}
+
+// contact_dit
+
 
 
 

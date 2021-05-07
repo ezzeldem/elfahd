@@ -2136,8 +2136,27 @@ html[dir="ltr"] .loder_page::after {
   height: 500px;
 }
 
+.contact_dit ul li {
+  margin: 0 0 20px;
+}
+
+.contact_dit ul li a {
+  font-size: 20px;
+  color: #2b4f67;
+  font-weight: 600;
+}
+
+.contact_dit ul li a:hover {
+  color: black;
+}
+
+.contact_dit ul li a i {
+  font-size: 16px;
+  margin: 0 4px;
+}
+
 .button_style, .button_style::before, .social-box .social-ul li a, .product-box .img-box .icon-box, .product-box .img-box img, .phone-link a, .circle-arrow, .nav-section .exit_icon i,
-.nav-section .opne_icon i, .nav-section .nav-box, .nav-section .nav-box .nav-ul li a, .nav-section .nav-box .nav-ul li a::after, .product_section .grid-box .transform-item, .min_footer .footer_content .social-box .social-ul li a, .min_footer .footer_content .footer_ul li a, .service_section .service_box, .service_section .service_box .img_box svg, .service_section .service_box .service_title, .service_section .service_box .prag, .application_section .feature_box {
+.nav-section .opne_icon i, .nav-section .nav-box, .nav-section .nav-box .nav-ul li a, .nav-section .nav-box .nav-ul li a::after, .product_section .grid-box .transform-item, .min_footer .footer_content .social-box .social-ul li a, .min_footer .footer_content .footer_ul li a, .service_section .service_box, .service_section .service_box .img_box svg, .service_section .service_box .service_title, .service_section .service_box .prag, .application_section .feature_box, .contact_dit ul li a {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
