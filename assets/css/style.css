@@ -1009,11 +1009,12 @@ html[dir="ltr"] .loder_page::after {
   display: inline-block;
   color: white;
   margin: 6px 0;
-  background-color: #2b4f67;
+  background: -webkit-gradient(linear, left bottom, left top, from(#2b4f67), color-stop(80%, #5e7385));
+  background: linear-gradient(0deg, #2b4f67 0%, #5e7385 80%);
 }
 
 .product_link_box .product_link.book_now {
-  background-color: #5e7385;
+  background: #5e7385 !important;
 }
 
 .name_salery {
@@ -1086,7 +1087,7 @@ html[dir="ltr"] .loder_page::after {
 }
 
 .nav-section .logo-box a .text_box .sub_text {
-  font-family: arabicFont4;
+  font-family: arabicFont;
   font-size: 16px;
   color: #2b4f67;
   font-weight: 500;
@@ -1379,7 +1380,7 @@ html[dir="ltr"] .loder_page::after {
 
 @media (max-width: 992px) {
   .product_box_min.grid-viwe .product_box {
-    width: calc(100% / 2.5);
+    width: calc(100% / 2 - 20px);
   }
 }
 

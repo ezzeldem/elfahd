@@ -355,10 +355,11 @@
         display: inline-block;
         color: rgba($white-color, 1);
         margin: 6px 0;
-        background-color: rgba($min-color, 1);
+        background: linear-gradient(0deg, rgba($min-color, 1) 0%, rgba($sub-color, 1) 80%);
+
 
         &.book_now {
-            background-color: rgba($sub-color, 1);
+            background: rgba($sub-color, 1) !important;
         }
     }
 }
