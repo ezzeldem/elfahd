@@ -1,6 +1,6 @@
 // import
 
-@import "varFIle", "Norm", "loderStyle", "minCLass" , "nav_section", "formStyle" ,"footer_section";
+@import "varFIle", "Norm", "loderStyle", "minCLass", "nav_section", "Product", "product_style", "formStyle", "footer_section";
 
 
 
@@ -73,7 +73,7 @@
     }
 
 
-    
+
 }
 
 // about_secion
@@ -312,7 +312,7 @@
                 display: block;
                 position: absolute;
                 top: 28px;
-                right: 80px;
+                left: 43px;
 
                 i {
                     font-size: 30px;
@@ -654,7 +654,7 @@
 
 // aplicatopn_img
 
-.aplicatopn_img{
+.aplicatopn_img {
     height: 500px;
 }
 
@@ -677,4 +677,14 @@
 
 %trans-4 {
     transition: 0.4s all ease-in-out;
+}
+
+%flex_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+%back_img {
+    background-repeat: no-repeat;
+    background-size: cover;
 }

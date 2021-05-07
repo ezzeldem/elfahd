@@ -1,0 +1,143 @@
+// product_section
+
+.product_section {
+    .grid-box {
+        margin: 10px;
+        display: flex;
+
+        .transform-item {
+            cursor: pointer;
+            padding: 3px 9px;
+            border: 1px solid rgba($min-color, 0.7);
+            color: rgba($min-color, 1);
+            @extend%trans-4;
+
+            &.active {
+                background-color: rgba($min-color, 1);
+                color: $white-color;
+            }
+
+            &:first-of-type {
+                border-bottom-right-radius: 4px;
+                border-top-right-radius: 4px;
+            }
+
+            &:last-of-type {
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+        }
+    }
+
+}
+
+// product_section
+
+
+
+.product_box_min {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &.grid-viwe {
+        flex-direction: row;
+        .product_box {
+            @extend%product-row ;
+            
+     
+        }
+    }
+
+    &.list-viwe {
+        flex-direction: column;
+        .product_box {
+            @extend%product-list ;
+        }
+    }
+
+    .product_box {
+        box-shadow: 0 0px 20px rgba($min-color, 0.2);
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+        .new_box {
+            width: 45px;
+            height: 45px;
+            font-size: 10px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $green-color;
+            font-weight: 500;
+            color: rgba($white-color, 1);
+            position: absolute;
+            left: -11px;
+            top: -16px;
+        }
+
+    }
+}
+
+
+
+%product-list {
+    @extend%flex_box;
+    width: 100% !important;
+    
+    .name_img_box {
+        display: flex;
+        flex-direction: row;
+
+        .product_img {
+            width: 258px;
+            height: 144px;
+            @extend%back_img;
+        }
+
+
+    }
+
+    .product_link_box {
+        width: 25%;
+        justify-content: flex-end;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+%product-row {
+    text-align: center;
+    width: calc(100% / 3 - 20px);
+    @media (max-width: 992px) {
+        & {
+            width: calc(100% / 2.5);
+        }
+    }
+
+    @media (max-width: 772px) {
+        & {
+            width: 100%;
+        }
+    }
+
+
+    .name_img_box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .product_img {
+            width: 100%;
+            height: 200px;
+            @extend%back_img;
+        }
+
+    }
+
+}

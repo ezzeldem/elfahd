@@ -44,7 +44,7 @@
                 }
 
                 .sub_text {
-                    font-family: $sub_text;
+                    font-family: arabicFont4;
                     font-size: 16px;
                     color: rgba($min-color, 1);
                     font-weight: 500;
@@ -94,7 +94,7 @@
                         height: 2px;
                         bottom: 0px;
                         position: absolute;
-                        left: 0;
+                        right: 0;
                         background-color: $min-color;
                     }
                 }

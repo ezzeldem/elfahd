@@ -6,6 +6,7 @@ $gray-color: #d9dce1;
 $gold-color: #f08d20;
 $white-color:#fff;
 $red-color:red;
+$green-color:#03ad54;
 
 
 // color
@@ -19,6 +20,13 @@ $sub_text: "Lobster",cursive;
 
 // text
 
+
+// font-face 
+
+@font-face {
+    font-family: arabicFont;
+    src: url('../fonts/Almarai-Bold.ttf');
+  }
 
 
 
