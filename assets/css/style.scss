@@ -1,6 +1,6 @@
 // import
 
-@import "varFIle", "Norm", "loderStyle", "minCLass", "nav_section", "Product", "product_style", "formStyle", "footer_section";
+@import "varFIle", "Norm", "loderStyle", "minCLass", "nav_section", "product_ditales", "product_box", "formStyle", "footer_section";
 
 
 
@@ -306,8 +306,9 @@
             background-color: rgba($min-color, 0.8);
             top: -100%;
             z-index: 9999;
-            padding: 60px;
-
+            padding: 60px 10px 10px;
+            display: block;
+            text-align: center;
             .exit_icon {
                 display: block;
                 position: absolute;
@@ -328,7 +329,6 @@
                 display: block;
                 text-align: center;
                 height: unset;
-                margin: 0 0 30px;
 
                 li {
                     a {
@@ -346,6 +346,10 @@
                 }
             }
 
+            .button_style{
+                color: rgba($white-color, 1);
+                margin: 20px 0;
+            }
             .phone-link,
             .social-box {
                 display: block;
@@ -524,16 +528,7 @@
     }
 }
 
-// extintion_class
 
-.opne_menu {
-    top: 0 !important;
-    opacity: 1 !important;
-}
-
-.over_lay {
-    overflow-y: hidden !important;
-}
 
 // Service page
 

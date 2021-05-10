@@ -356,8 +356,11 @@
         color: rgba($white-color, 1);
         margin: 6px 0;
         background: linear-gradient(0deg, rgba($min-color, 1) 0%, rgba($sub-color, 1) 80%);
-
-
+        @extend%trans-4;
+        &:hover{
+            box-shadow: 0px 2px 2px 0px #00000094;
+            transform: translateY(5px);
+        }
         &.book_now {
             background: rgba($sub-color, 1) !important;
         }
@@ -399,3 +402,16 @@
 
 
 // min class
+
+
+
+// extintion_class
+
+.opne_menu {
+    top: 0 !important;
+    opacity: 1 !important;
+}
+
+.over_lay {
+    overflow-y: hidden !important;
+}

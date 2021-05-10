@@ -29,8 +29,10 @@
     .feather_box{
       margin: 0 0 20px ;
       @extend%flex_box;
+      flex-wrap: wrap;
       .feather_box_name{
         @extend%flex_box;
+        margin: 10px;
         i{
           display: flex;
           align-items: center;
@@ -105,7 +107,8 @@
 
 
 
-.product_box{
+.product_box_img{
+  margin: 0 0 10px;
   img{
     height: 322px;
     object-fit: cover;
@@ -122,13 +125,13 @@
       cursor: pointer;
     }
   }
+}
 
 
 
 
-
-
-
-
-
+@media (max-width:992px){
+  .side_img{
+    text-align: center;
+  }
 }

@@ -56,10 +56,12 @@
     .nav-box {
         @extend%trans-4;
         height: 100%;
-
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
         .nav-ul {
-            display: flex;
             justify-content: flex-end;
+            display: flex;
             height: 100%;
             align-items: center;
 

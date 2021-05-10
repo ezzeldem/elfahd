@@ -1013,6 +1013,13 @@ html[dir="ltr"] .loder_page::after {
   background: linear-gradient(0deg, #2b4f67 0%, #5e7385 80%);
 }
 
+.product_link_box .product_link:hover {
+  -webkit-box-shadow: 0px 2px 2px 0px #00000094;
+          box-shadow: 0px 2px 2px 0px #00000094;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
 .product_link_box .product_link.book_now {
   background: #5e7385 !important;
 }
@@ -1043,6 +1050,15 @@ html[dir="ltr"] .loder_page::after {
   font-size: 14px;
   text-decoration: line-through;
   color: #5e7385;
+}
+
+.opne_menu {
+  top: 0 !important;
+  opacity: 1 !important;
+}
+
+.over_lay {
+  overflow-y: hidden !important;
 }
 
 .top-header {
@@ -1095,15 +1111,24 @@ html[dir="ltr"] .loder_page::after {
 
 .nav-section .nav-box {
   height: 100%;
-}
-
-.nav-section .nav-box .nav-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.nav-section .nav-box .nav-ul {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1175,6 +1200,12 @@ html[dir="ltr"] .loder_page::after {
 
 .product_section .product_ditales .feather_box {
   margin: 0 0 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product_section .product_ditales .feather_box .feather_box_name {
+  margin: 10px;
 }
 
 .product_section .product_ditales .feather_box .feather_box_name i {
@@ -1249,7 +1280,11 @@ html[dir="ltr"] .loder_page::after {
   font-size: 16px;
 }
 
-.product_section .product_box img {
+.product_section .product_box_img {
+  margin: 0 0 10px;
+}
+
+.product_section .product_box_img img {
   height: 322px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1262,6 +1297,12 @@ html[dir="ltr"] .loder_page::after {
      object-fit: cover;
   width: 100px;
   cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .side_img {
+    text-align: center;
+  }
 }
 
 .product_section .grid-box {
@@ -1316,7 +1357,7 @@ html[dir="ltr"] .loder_page::after {
           flex-direction: column;
 }
 
-.product_box_min .product_box {
+.product_box {
   -webkit-box-shadow: 0 0px 20px rgba(43, 79, 103, 0.2);
           box-shadow: 0 0px 20px rgba(43, 79, 103, 0.2);
   margin: 10px;
@@ -1324,7 +1365,7 @@ html[dir="ltr"] .loder_page::after {
   position: relative;
 }
 
-.product_box_min .product_box .new_box {
+.product_box .new_box {
   width: 45px;
   height: 45px;
   font-size: 10px;
@@ -1837,7 +1878,9 @@ html[dir="ltr"] .loder_page::after {
     background-color: rgba(43, 79, 103, 0.8);
     top: -100%;
     z-index: 9999;
-    padding: 60px;
+    padding: 60px 10px 10px;
+    display: block;
+    text-align: center;
   }
   .nav-section .nav-box .exit_icon {
     display: block;
@@ -1856,7 +1899,6 @@ html[dir="ltr"] .loder_page::after {
     display: block;
     text-align: center;
     height: unset;
-    margin: 0 0 30px;
   }
   .nav-section .nav-box .nav-ul li a {
     color: white;
@@ -1866,6 +1908,10 @@ html[dir="ltr"] .loder_page::after {
   }
   .nav-section .nav-box .nav-ul li a.active, .nav-section .nav-box .nav-ul li a:hover {
     color: white;
+  }
+  .nav-section .nav-box .button_style {
+    color: white;
+    margin: 20px 0;
   }
   .nav-section .nav-box .phone-link,
   .nav-section .nav-box .social-box {
@@ -2029,15 +2075,6 @@ html[dir="ltr"] .loder_page::after {
   }
 }
 
-.opne_menu {
-  top: 0 !important;
-  opacity: 1 !important;
-}
-
-.over_lay {
-  overflow-y: hidden !important;
-}
-
 .intro_section_sub_page {
   padding: 40px 0;
   background-image: url("../img/elevtor.jpg");
@@ -2155,7 +2192,7 @@ html[dir="ltr"] .loder_page::after {
   margin: 0 4px;
 }
 
-.button_style, .button_style::before, .social-box .social-ul li a, .product-box .img-box .icon-box, .product-box .img-box img, .phone-link a, .circle-arrow, .nav-section .exit_icon i,
+.button_style, .button_style::before, .social-box .social-ul li a, .product-box .img-box .icon-box, .product-box .img-box img, .phone-link a, .circle-arrow, .product_link_box .product_link, .nav-section .exit_icon i,
 .nav-section .opne_icon i, .nav-section .nav-box, .nav-section .nav-box .nav-ul li a, .nav-section .nav-box .nav-ul li a::after, .product_section .grid-box .transform-item, .min_footer .footer_content .social-box .social-ul li a, .min_footer .footer_content .footer_ul li a, .service_section .service_box, .service_section .service_box .img_box svg, .service_section .service_box .service_title, .service_section .service_box .prag, .application_section .feature_box, .contact_dit ul li a {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
