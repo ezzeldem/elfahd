@@ -47,6 +47,10 @@
   fill: #5e7385;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html[dir="ltr"] body {
   font-family: "Open Sans", sans-serif;
 }
