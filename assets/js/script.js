@@ -3,6 +3,9 @@ $(document).ready(function () {
     setTimeout(function () {
         $(".loder_page").addClass("hiddinTime");
     }, 4200);
+    setTimeout(function () {
+        $(".loder_page.sub_page_loder").addClass("hiddinTime");
+    }, 1500);
 
     // scrol-buttom
     $(".scrol-buttom-a").click(function () {

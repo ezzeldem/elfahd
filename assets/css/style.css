@@ -74,10 +74,6 @@ a:hover {
   text-decoration: none;
 }
 
-.loder_page {
-  display: none !important;
-}
-
 .loder_img_1 {
   fill: #2b4f67;
 }
@@ -193,6 +189,10 @@ a:hover {
   -webkit-transition: 1s all ease-in-out;
   transition: 1s all ease-in-out;
   z-index: 99999;
+}
+
+.loder_page.sub_page_loder::after {
+  display: none;
 }
 
 .loder_page.hiddinTime {
