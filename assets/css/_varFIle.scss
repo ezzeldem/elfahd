@@ -95,5 +95,5 @@ $color_var in $elvetor_CLass_name {
 body {
     @include pageDir(ltr);
     @include pageDir(rtl);
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }

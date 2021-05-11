@@ -48,7 +48,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 html[dir="ltr"] body {
@@ -1617,6 +1617,10 @@ html[dir="ltr"] .loder_page::after {
   background-size: contain;
 }
 
+.intro_section .button_style {
+  margin: 0 0 110px;
+}
+
 .intro_text .text1 {
   font-size: 37px;
   font-weight: bold;
@@ -1847,6 +1851,14 @@ html[dir="ltr"] .loder_page::after {
 }
 
 @media (max-width: 772px) {
+  .small_screen {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .intro_section .button_style {
+    margin: 0 0 56px;
+  }
   .order_1 {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
