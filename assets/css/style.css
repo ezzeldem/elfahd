@@ -1541,6 +1541,7 @@ select {
   color: #2b4f67;
   height: 40px;
   cursor: pointer;
+  background-color: white;
 }
 
 textarea {
