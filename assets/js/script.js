@@ -82,6 +82,20 @@ $(document).ready(function () {
 
 
 
+    const loginClass = '.login_form .form-group input';
+
+    $(loginClass).on("focus", function () {
+      $(this).parent().addClass('up');
+    });
+  
+  $(loginClass).on("blur", function () {
+    if ($(this).val()) {
+        $(this).parent().addClass('up');
+    }
+    if (!$(this).val()) {
+        $(this).parent().removeClass('up');
+    }
+});
 
 
 

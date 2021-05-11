@@ -54,6 +54,14 @@
       }
     }
 
+    .buttom_box{
+      flex-wrap: wrap;
+      display: flex;
+      .app_box{
+        margin: 5px ;
+      }
+    }
+
 
   }
 

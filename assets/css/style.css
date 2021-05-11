@@ -678,6 +678,46 @@ html[dir="ltr"] .loder_page::after {
   margin: 0 !important;
 }
 
+.video_link {
+  font-size: 16px;
+  color: #2b4f67;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video_link i {
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #2b4f67;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  border: 1px solid #2b4f67;
+}
+
+.video_link:hover {
+  color: #5e7385;
+}
+
+.video_link:hover i {
+  background-color: white;
+  color: #2b4f67;
+}
+
 .srction_title {
   text-align: center;
   padding: 0 0 30px;
@@ -1238,6 +1278,18 @@ html[dir="ltr"] .loder_page::after {
   width: 68%;
 }
 
+.product_section .product_ditales .buttom_box {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product_section .product_ditales .buttom_box .app_box {
+  margin: 5px;
+}
+
 .product_section .details-content {
   padding: 30px;
   margin: 40px 0;
@@ -1451,61 +1503,123 @@ html[dir="ltr"] .loder_page::after {
   height: 200px;
 }
 
-/*start contact_section*/
-.contact_section {
-  margin-top: 30px;
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
 }
 
-.contact_section .contact_img {
-  margin-top: 60px;
-}
-
-.contact_section .form input[type="text"] {
-  color: #2b4f67;
-  width: 100%;
-  border: 1px solid #2b4f67;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
+button {
+  margin: 20px 0 0;
+  border: 1px solid rgba(43, 79, 103, 0.5);
   font-size: 16px;
-}
-
-.contact_section .form input[type="email"] {
-  color: #2b4f67;
-  width: 100%;
-  border: 1px solid #2b4f67;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.contact_section .form textarea {
-  color: #2b4f67;
-  width: 100%;
-  border: 1px solid #2b4f67;
-  padding: 10px;
-  margin-bottom: 10px;
-  height: 150px;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.contact_section .form button {
-  color: #2b4f67;
-  padding: 15px 25px;
-  border: 1px solid #2b4f67;
+  font-weight: 600;
   background-color: #fff;
-  border-radius: 5px;
-  font-size: 15px;
+  border-radius: 3px;
+  color: #2b4f67;
   cursor: pointer;
-  margin-bottom: 30px;
+  padding: 9px 17px;
 }
 
-.contact_section .form button:hover {
+button:hover {
   background-color: #2b4f67;
-  font-weight: bold;
+  color: white;
+}
+
+button:focus {
+  outline: none;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+}
+
+select {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid rgba(43, 79, 103, 0.5);
+  color: #2b4f67;
+  height: 40px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  border-radius: 3px;
+  border: 1px solid rgba(43, 79, 103, 0.5);
+  padding: 10px 20px;
+}
+
+/*start contact_section*/
+.contact_section .form-group {
+  margin: 40px 0 0;
+  position: relative;
+}
+
+.contact_section .form-group:first-of-type {
+  margin: 0px 0 0;
+}
+
+@media (max-width: 772px) {
+  .contact_section .form-group:first-of-type {
+    margin: 40px 0 0;
+  }
+}
+
+.contact_section .form-group.up label {
+  top: -20px;
+  color: rgba(43, 79, 103, 0.8);
+}
+
+.contact_section .form-group.select_label label {
+  top: -27px;
+}
+
+.contact_section .form-group label {
+  cursor: text;
+  font-size: 14px;
+  color: rgba(43, 79, 103, 0.5);
+  position: absolute;
+  z-index: 88;
+  right: 12px;
+  top: 6px;
+  font-weight: 600;
+}
+
+.contact_section .form-group input {
+  position: relative;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid rgba(43, 79, 103, 0.5);
+  border-left: 0;
+  border-radius: 0;
+  color: #2b4f67;
+}
+
+.contact_section .forget_link {
+  margin: 5px 0;
+}
+
+.contact_section .login_button {
+  margin: 20px 0 60px;
+  font-weight: 600;
+  font-size: 18px;
+  width: 100%;
+  height: 40px;
   color: #fff;
+  background: #2b4f67;
+}
+
+.contact_section .login_button:hover {
+  background: #2b4f67;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.contact_section .login_button:focus {
+  -webkit-transform: translateY(5px) scale(0.97);
+          transform: translateY(5px) scale(0.97);
 }
 
 .min_footer {
@@ -2208,8 +2322,8 @@ html[dir="ltr"] .loder_page::after {
   margin: 0 4px;
 }
 
-.button_style, .button_style::before, .social-box .social-ul li a, .product-box .img-box .icon-box, .product-box .img-box img, .phone-link a, .circle-arrow, .product_link_box .product_link, .nav-section .exit_icon i,
-.nav-section .opne_icon i, .nav-section .nav-box, .nav-section .nav-box .nav-ul li a, .nav-section .nav-box .nav-ul li a::after, .product_section .grid-box .transform-item, .min_footer .footer_content .social-box .social-ul li a, .min_footer .footer_content .footer_ul li a, .service_section .service_box, .service_section .service_box .img_box svg, .service_section .service_box .service_title, .service_section .service_box .prag, .application_section .feature_box, .contact_dit ul li a {
+.video_link, .video_link i, .button_style, .button_style::before, .social-box .social-ul li a, .product-box .img-box .icon-box, .product-box .img-box img, .phone-link a, .circle-arrow, .product_link_box .product_link, .nav-section .exit_icon i,
+.nav-section .opne_icon i, .nav-section .nav-box, .nav-section .nav-box .nav-ul li a, .nav-section .nav-box .nav-ul li a::after, .product_section .grid-box .transform-item, button, .contact_section .form-group label, .contact_section .login_button, .min_footer .footer_content .social-box .social-ul li a, .min_footer .footer_content .footer_ul li a, .service_section .service_box, .service_section .service_box .img_box svg, .service_section .service_box .service_title, .service_section .service_box .prag, .application_section .feature_box, .contact_dit ul li a {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
