@@ -9,11 +9,12 @@ $(document).ready(function () {
 
     // scrol-buttom
     $(".scrol-buttom-a").click(function () {
+        
         $("html, body").animate(
             {
                 scrollTop: $(".about_secion").offset().top,
             },
-            1000
+            100
         );
     });
 
@@ -31,7 +32,7 @@ $(document).ready(function () {
             {
                 scrollTop: $(".top-header").offset().top,
             },
-            600
+            100
         );
     });
 
@@ -101,21 +102,6 @@ $(document).ready(function () {
 
     // AOS
     AOS.init({ duration: 600 });
-
-
-
-    import {getCLS, getFID, getLCP} from 'web-vitals';
-
-function sendToAnalytics(metric) {
-  const body = JSON.stringify(metric);
-  // Use `navigator.sendBeacon()` if available, falling back to `fetch()`.
-  (navigator.sendBeacon && navigator.sendBeacon('/analytics', body)) ||
-      fetch('/analytics', {body, method: 'POST', keepalive: true});
-}
-
-getCLS(sendToAnalytics);
-getFID(sendToAnalytics);
-getLCP(sendToAnalytics);
 
 
 });

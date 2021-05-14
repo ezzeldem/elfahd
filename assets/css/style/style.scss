@@ -13,7 +13,7 @@
 .intro_section {
     padding: 80px 0;
     margin: 0 0 40px;
-    background-image: url("../img/img_back.png");
+    background-image: url("../../img/img_back.png");
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -147,7 +147,7 @@
 
     &::after {
         content: "";
-        background-image: url("../img/Wdots.svg");
+        background-image: url("../../img/Wdots.svg");
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
@@ -541,7 +541,7 @@
 
 .intro_section_sub_page {
     padding: 40px 0;
-    background-image: url("../img/elevtor.jpg");
+    background-image: url("../../img/elevtor.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
