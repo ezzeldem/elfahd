@@ -290,10 +290,6 @@
     }
 
 
-    .about_img{
-        margin:30px 0 0;
-    }
-
 
     .top-header {
         display: none;
@@ -421,8 +417,7 @@
     .about_secion {
         .about_box {
             .about_img {
-                margin: -77px 0 0;
-                height: unset !important;
+                margin: -10px 0 0;
             }
 
             .about_content {
@@ -516,12 +511,6 @@
     .about_secion {
         .about_content {
             padding: 25px 20px 35px;
-        }
-
-        .about_box {
-            .about_img {
-                margin: -60px 0 0;
-            }
         }
     }
 }

@@ -14,9 +14,12 @@ $green-color:#03ad54;
 
 
 // text
-$arabc_font:'Cairo',sans-serif;
-$english_font:'Open Sans',sans-serif;
-$sub_text: "Lobster",cursive;
+$arabc_font:'Cairo',
+sans-serif;
+$english_font:'Open Sans',
+sans-serif;
+$sub_text: "Lobster",
+cursive;
 
 // text
 
@@ -85,7 +88,9 @@ $color_var in $elvetor_CLass_name {
         html[dir="#{$dir}"] & {
             font-family: $arabc_font;
         }
-    }@else {
+    }
+
+    @else {
         html[dir="#{$dir}"] & {
             font-family: $english_font;
         }
