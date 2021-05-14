@@ -667,7 +667,7 @@ html[dir="ltr"] .loder_page::after {
 .prag {
   font-size: 16px;
   font-weight: 500;
-  color: #2b4f67;
+  color: #005085;
 }
 
 .section_padding {
@@ -1428,7 +1428,7 @@ html[dir="ltr"] .loder_page::after {
 .product_box .new_box {
   width: 45px;
   height: 45px;
-  font-size: 10px;
+  font-size: 14px;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1440,8 +1440,8 @@ html[dir="ltr"] .loder_page::after {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #03ad54;
-  font-weight: 500;
-  color: white;
+  font-weight: 600;
+  color: black;
   position: absolute;
   left: -11px;
   top: -16px;

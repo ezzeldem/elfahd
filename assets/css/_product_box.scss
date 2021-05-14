@@ -67,14 +67,14 @@
     .new_box {
         width: 45px;
         height: 45px;
-        font-size: 10px;
+        font-size: 14px;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: $green-color;
-        font-weight: 500;
-        color: rgba($white-color, 1);
+        font-weight: 600;
+        color: rgba($black-color, 1);
         position: absolute;
         left: -11px;
         top: -16px;
