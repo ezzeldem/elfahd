@@ -408,6 +408,10 @@ ul {
   margin: 0;
 }
 
+.loder_page {
+  display: none !important;
+}
+
 .loder_img_1 {
   fill: #2b4f67;
 }
@@ -1448,6 +1452,7 @@ html[dir="ltr"] .loder_page::after {
 .nav-section {
   padding: 20px 0;
   border-bottom: 2px solid #5e7385;
+  background-color: #fff;
 }
 
 .nav-section .exit_icon,
@@ -2389,7 +2394,7 @@ textarea {
     color: white;
   }
   .nav-section .nav-box .button_style {
-    color: white;
+    color: #2b4f67;
     margin: 20px 0;
   }
   .nav-section .nav-box .phone-link,
