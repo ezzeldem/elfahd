@@ -408,6 +408,10 @@ ul {
   margin: 0;
 }
 
+.loder_page {
+  display: none !important;
+}
+
 .loder_img_1 {
   fill: #2b4f67;
 }
@@ -1100,6 +1104,7 @@ html[dir="ltr"] .loder_page::after {
   z-index: 1;
   display: inline-block;
   color: #2b4f67;
+  background-color: white;
 }
 
 .button_style::after {
@@ -1955,6 +1960,19 @@ textarea {
 .contact_section .login_button:focus {
   -webkit-transform: translateY(5px) scale(0.97);
           transform: translateY(5px) scale(0.97);
+}
+
+.main-container {
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -101;
 }
 
 .min_footer {

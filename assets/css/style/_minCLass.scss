@@ -99,7 +99,7 @@
     z-index: 1;
     display: inline-block;
     color: rgba($min-color, 1);
-
+    background-color: rgba($white-color, 1);
     @extend%trans-4;
 
     &::after {

@@ -9,12 +9,12 @@ $(document).ready(function () {
 
     // scrol-buttom
     $(".scrol-buttom-a").click(function () {
-        
+
         $("html, body").animate(
             {
                 scrollTop: $(".about_secion").offset().top,
             },
-            100
+            600
         );
     });
 
@@ -32,9 +32,16 @@ $(document).ready(function () {
             {
                 scrollTop: $(".top-header").offset().top,
             },
-            100
+            600
         );
     });
+
+
+
+    // fixed footer
+    const footre_high = $(".footer-container").css('height');
+    $(".main-container").css("margin-bottom", footre_high);
+
 
     // opne_icon
     $(".opne_icon").click(function () {
@@ -86,22 +93,20 @@ $(document).ready(function () {
     const loginClass = '.login_form .form-group input';
 
     $(loginClass).on("focus", function () {
-      $(this).parent().addClass('up');
-    });
-  
-  $(loginClass).on("blur", function () {
-    if ($(this).val()) {
         $(this).parent().addClass('up');
-    }
-    if (!$(this).val()) {
-        $(this).parent().removeClass('up');
-    }
-});
+    });
 
-
+    $(loginClass).on("blur", function () {
+        if ($(this).val()) {
+            $(this).addClass('is-valid').parent().addClass('up');
+        }
+        if (!$(this).val()) {
+            $(this).removeClass('is-valid').parent().removeClass('up');
+        }
+    });
+    
 
     // AOS
     AOS.init({ duration: 600 });
-
 
 });
