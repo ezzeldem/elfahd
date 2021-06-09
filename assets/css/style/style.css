@@ -2685,5 +2685,5 @@ textarea {
 
 .product_box_min.list-viwe .product_box .name_img_box .product_img, .product_box_min.grid-viwe .product_box .name_img_box .product_img {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
