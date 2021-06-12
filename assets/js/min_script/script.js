@@ -1,4 +1,22 @@
 $(document).ready(function () {
+    
+    $(".nav-section .logo-box a").remove();
+    $(".nav-section .logo-box ").append('<a href="#" class="logo-link">' +
+ '   <img src="assets/img/logo.png" style="height: 55px;" class="img-fluid" alt="">' +
+    '<div class="text_box">' +
+        '<h4 class="title_text">الفهد</h4>' +
+        '<span class="sub_text">للمصاعد الكهربائية</span>' +
+    '</div>' +
+    '</a>'
+);
+    $(".banner_section .button_box .button_style").remove();
+    $(".banner_section .button_box").append('<a href="./contact.html" class="button_style">تواصل معنا</a>');
+
+    
+    
+    
+    
+    
     // hide lodding page
     setTimeout(function () {
         $(".loder_page").addClass("hiddinTime");

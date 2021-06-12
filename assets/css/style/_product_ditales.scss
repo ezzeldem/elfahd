@@ -78,11 +78,7 @@
 
 
 
-    .details-titel{
-      font-size: 26px;
-      font-weight: 600;
-      color: rgba($min-color, 1);
-    }
+  
     .p-details{
       padding: 20px 0; 
       font-size: 14px;
@@ -141,5 +137,21 @@
 @media (max-width:992px){
   .side_img{
     text-align: center;
+  }
+}
+
+
+.details-titel{
+  font-size: 26px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  color: rgba($min-color, 1);
+}
+
+.specifications_ul{
+  ul{
+    li{
+      color:rgba($sub-color, 1)
+    }
   }
 }
