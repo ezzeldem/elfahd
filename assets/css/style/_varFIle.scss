@@ -102,4 +102,5 @@ body {
     @include pageDir(ltr);
     @include pageDir(rtl);
     overflow-x: hidden !important;
+    background-color: $white-color;
 }

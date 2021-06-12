@@ -49,6 +49,7 @@
 
 body {
   overflow-x: hidden !important;
+  background-color: #fff;
 }
 
 html[dir="ltr"] body {
@@ -406,10 +407,6 @@ template {
 ul {
   padding: 0;
   margin: 0;
-}
-
-.loder_page {
-  display: none !important;
 }
 
 .loder_img_1 {
@@ -1009,7 +1006,7 @@ html[dir="ltr"] .loder_page::after {
 }
 
 .section_margin {
-  margin: 40px 0;
+  padding: 40px 0;
 }
 
 .section_margin_0 {
@@ -1975,6 +1972,7 @@ textarea {
 }
 
 .footer-container {
+  position: fixed;
   bottom: 0;
   width: 100%;
   z-index: -101;
