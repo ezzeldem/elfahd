@@ -1,0 +1,92 @@
+
+.left-0{
+    left: 0 !important;
+    .theme-ul{
+        filter: blur(0) !important;
+    }
+}
+.theme-box{
+    @extend%trans-4;
+    position: fixed;
+    top: 200px;
+    left: -130px;
+    display: flex;
+    .icon-box{
+        background-color: $white-color;
+        cursor: pointer;
+        width: 36px;
+        height: 36px;
+        border:1px solid rgba($min-color, .3) ;
+        border-left: 0;
+        border-radius: 0 5px   5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+            transform-origin: center;
+            transform-box: fill-box;
+            font-size: 20px;
+            animation: iconRutate 2s linear forwards infinite;
+        }
+    }
+    
+    .theme-ul{
+        @extend%trans-4;
+        filter: blur(2px) ;
+        background-color: $white-color;
+        padding: 6px 8px;
+        border:1px solid rgba($min-color, .3) ;
+        max-width: 130px;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                margin: 4px ;
+                span{
+                    cursor: pointer;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+}
+
+
+@keyframes iconRutate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+
+
+
+@each $color-name , $color-value in $theme-iteme {
+    .solid-back{
+        &[data-color= #{$color-name}]{
+            background-color: $color-value !important;
+        }
+    }
+    .gradient-back{
+        &[data-color= #{$color-name}]{
+            background: linear-gradient(90deg, $color-value 30%, ($color-value - 40) 80%);
+        }
+    }
+    .item-color{
+        &[data-color= #{$color-name}]{
+            color: $color-value !important;
+        }
+    }
+    .border-color{
+        &[data-color= #{$color-name}]{
+            border-color: $color-value !important;
+        }
+    }
+}

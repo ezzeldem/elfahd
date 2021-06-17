@@ -1,5 +1,128 @@
 .product_section {
-  .product_ditales{
+
+
+
+
+
+
+
+  .details-content{
+    padding: 30px ;
+    margin: 40px 0;
+    border-radius: 6px;
+    box-shadow: 0 0 8px 4px rgba($black-color, .1);
+
+
+
+  
+    .p-details{
+      padding: 20px 0; 
+      font-size: 14px;
+      font-weight:600;
+      color: rgba($sub-color, 1);
+    }
+
+    .specifications_ul{
+      ul{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        li{
+          margin: 4px 10px;
+          p{
+            i{
+              font-size: 16px;
+            }
+            font-size: 14px;
+            font-weight: 600;
+            color: rgba($min-color, 1);
+
+          }
+        }
+      }
+    }
+
+
+  }
+
+
+  .side_img{
+    img{
+      margin: 0 0 10px 0;
+      height: 100px;
+      object-fit: cover;
+      width: 100px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.product_ditales{
+  .name_price{
+    @extend%flex_box;
+    span{
+      margin: 10px 2px;
+      
+      &.name{
+        font-size: 24px;
+        font-weight: 700;
+        color: $min-color;
+        width: 80%;
+      }
+      &.price{
+        font-size: 20px;
+        font-weight: 600;
+        color: $sub-color;
+      }
+    }
+  }
+  .prag{
+    font-size: 15px;
+    color: rgba($black-color, .7);
+    font-weight: 500;
+    margin: 15px 0 20px ;
+  }
+  
+  
+  .feather_box{
+    margin: 0 0 20px ;
+    @extend%flex_box;
+    flex-wrap: wrap;
+    .feather_box_name{
+      @extend%flex_box;
+      margin: 10px;
+      i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+        background-color: $min-color;
+        color:$white-color;
+        border-radius: 4px;
+      }
+      .name{
+        font-size: 18px;
+        font-weight: 600;
+        color: $min-color;
+        margin: 2px ;
+        width: 68%;
+      }
+    }
+  }
+
+  .buttom_box{
+    flex-wrap: wrap;
+    display: flex;
+    .app_box{
+      margin: 5px ;
+    }
+  }
+
+
+}  .product_ditales{
     .name_price{
       @extend%flex_box;
       span{
@@ -65,72 +188,18 @@
 
   }
 
-
-
-
-
-
-  .details-content{
-    padding: 30px ;
-    margin: 40px 0;
-    border-radius: 6px;
-    box-shadow: 0 0 8px 4px rgba($black-color, .1);
-
-
-
-  
-    .p-details{
-      padding: 20px 0; 
-      font-size: 14px;
-      font-weight:600;
-      color: rgba($sub-color, 1);
-    }
-
-    .specifications_ul{
-      ul{
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: space-between;
-        li{
-          margin: 4px 10px;
-          p{
-            i{
-              font-size: 16px;
-            }
-            font-size: 14px;
-            font-weight: 600;
-            color: rgba($min-color, 1);
-
-          }
-        }
-      }
-    }
-
-
-  }
-
-
-
 .product_box_img{
   margin: 0 0 10px;
+  a{
+    display: block;
+  }
   img{
+    width: 100%;
     height: 322px;
     object-fit: cover;
+    object-position: right;
   }
 }
-
-
-  .side_img{
-    img{
-      margin: 0 0 10px 0;
-      height: 100px;
-      object-fit: cover;
-      width: 100px;
-      cursor: pointer;
-    }
-  }
-}
-
 
 
 

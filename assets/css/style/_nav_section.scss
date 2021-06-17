@@ -15,7 +15,8 @@
 
 .nav-section {
     padding: 20px 0;
-    border-bottom: 2px solid $sub-color;
+    border-bottom: 2px solid ;
+    border-color: $sub-color;
     background-color: $white-color;
     .exit_icon,
     .opne_icon {

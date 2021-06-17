@@ -207,7 +207,7 @@
     border-radius: 5px;
     z-index: 999;
     box-shadow: -6px 0px 8px rgba($black-color, 0.1);
-
+    @extend%trans-4;
     i {
         font-size: 25px;
         color: rgba($white-color, 1);

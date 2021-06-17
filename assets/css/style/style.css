@@ -409,6 +409,10 @@ ul {
   margin: 0;
 }
 
+.loder_page {
+  display: none !important;
+}
+
 .loder_img_1 {
   fill: #2b4f67;
 }
@@ -1094,7 +1098,8 @@ html[dir="ltr"] .loder_page::after {
 
 .button_style {
   padding: 8px 12px !important;
-  border: 1px solid #2b4f67;
+  border: 1px solid;
+  border-color: #2b4f67;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
@@ -1146,7 +1151,8 @@ html[dir="ltr"] .loder_page::after {
 .social-box .social-ul li a {
   font-size: 15px;
   color: #2b4f67;
-  border: 2px solid #2b4f67;
+  border: 2px solid;
+  border-color: #2b4f67;
   border-radius: 50%;
   width: 28px;
   height: 28px;
@@ -1164,8 +1170,8 @@ html[dir="ltr"] .loder_page::after {
 }
 
 .social-box .social-ul li a:hover {
-  color: #000;
-  border-color: #000;
+  color: #000 !important;
+  border-color: #000 !important;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
@@ -1448,7 +1454,8 @@ html[dir="ltr"] .loder_page::after {
 
 .nav-section {
   padding: 20px 0;
-  border-bottom: 2px solid #5e7385;
+  border-bottom: 2px solid;
+  border-color: #5e7385;
   background-color: #fff;
 }
 
@@ -1555,78 +1562,6 @@ html[dir="ltr"] .loder_page::after {
   display: none;
 }
 
-.product_section .product_ditales .name_price span {
-  margin: 10px 2px;
-}
-
-.product_section .product_ditales .name_price span.name {
-  font-size: 24px;
-  font-weight: 700;
-  color: #2b4f67;
-  width: 80%;
-}
-
-.product_section .product_ditales .name_price span.price {
-  font-size: 20px;
-  font-weight: 600;
-  color: #5e7385;
-}
-
-.product_section .product_ditales .prag {
-  font-size: 15px;
-  color: rgba(0, 0, 0, 0.7);
-  font-weight: 500;
-  margin: 15px 0 20px;
-}
-
-.product_section .product_ditales .feather_box {
-  margin: 0 0 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.product_section .product_ditales .feather_box .feather_box_name {
-  margin: 10px;
-}
-
-.product_section .product_ditales .feather_box .feather_box_name i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 38px;
-  height: 38px;
-  font-size: 20px;
-  background-color: #2b4f67;
-  color: #fff;
-  border-radius: 4px;
-}
-
-.product_section .product_ditales .feather_box .feather_box_name .name {
-  font-size: 18px;
-  font-weight: 600;
-  color: #2b4f67;
-  margin: 2px;
-  width: 68%;
-}
-
-.product_section .product_ditales .buttom_box {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.product_section .product_ditales .buttom_box .app_box {
-  margin: 5px;
-}
-
 .product_section .details-content {
   padding: 30px;
   margin: 40px 0;
@@ -1667,16 +1602,6 @@ html[dir="ltr"] .loder_page::after {
   font-size: 16px;
 }
 
-.product_section .product_box_img {
-  margin: 0 0 10px;
-}
-
-.product_section .product_box_img img {
-  height: 322px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .product_section .side_img img {
   margin: 0 0 10px 0;
   height: 100px;
@@ -1684,6 +1609,167 @@ html[dir="ltr"] .loder_page::after {
      object-fit: cover;
   width: 100px;
   cursor: pointer;
+}
+
+.product_ditales .name_price span {
+  margin: 10px 2px;
+}
+
+.product_ditales .name_price span.name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2b4f67;
+  width: 80%;
+}
+
+.product_ditales .name_price span.price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #5e7385;
+}
+
+.product_ditales .prag {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+  margin: 15px 0 20px;
+}
+
+.product_ditales .feather_box {
+  margin: 0 0 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product_ditales .feather_box .feather_box_name {
+  margin: 10px;
+}
+
+.product_ditales .feather_box .feather_box_name i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 38px;
+  height: 38px;
+  font-size: 20px;
+  background-color: #2b4f67;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.product_ditales .feather_box .feather_box_name .name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2b4f67;
+  margin: 2px;
+  width: 68%;
+}
+
+.product_ditales .buttom_box {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product_ditales .buttom_box .app_box {
+  margin: 5px;
+}
+
+.product_ditales .name_price span {
+  margin: 10px 2px;
+}
+
+.product_ditales .name_price span.name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2b4f67;
+  width: 80%;
+}
+
+.product_ditales .name_price span.price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #5e7385;
+}
+
+.product_ditales .prag {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+  margin: 15px 0 20px;
+}
+
+.product_ditales .feather_box {
+  margin: 0 0 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product_ditales .feather_box .feather_box_name {
+  margin: 10px;
+}
+
+.product_ditales .feather_box .feather_box_name i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 38px;
+  height: 38px;
+  font-size: 20px;
+  background-color: #2b4f67;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.product_ditales .feather_box .feather_box_name .name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2b4f67;
+  margin: 2px;
+  width: 68%;
+}
+
+.product_ditales .buttom_box {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product_ditales .buttom_box .app_box {
+  margin: 5px;
+}
+
+.product_box_img {
+  margin: 0 0 10px;
+}
+
+.product_box_img a {
+  display: block;
+}
+
+.product_box_img img {
+  width: 100%;
+  height: 322px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
 }
 
 @media (max-width: 992px) {
@@ -2675,12 +2761,12 @@ textarea {
 }
 
 .video_link, .video_link i, .button_style, .button_style::before, .social-box .social-ul li a, .product-box .img-box .icon-box, .product-box .img-box img, .phone-link a, .circle-arrow, .product_link_box .product_link, .nav-section .exit_icon i,
-.nav-section .opne_icon i, .nav-section .nav-box, .nav-section .nav-box .nav-ul li a, .nav-section .nav-box .nav-ul li a::after, .product_section .grid-box .transform-item, button, .contact_section .form-group label, .contact_section .login_button, .min_footer .footer_content .social-box .social-ul li a, .min_footer .footer_content .footer_ul li a, .service_section .service_box, .service_section .service_box .img_box svg, .service_section .service_box .service_title, .service_section .service_box .prag, .application_section .feature_box, .contact_dit ul li a {
+.nav-section .opne_icon i, .nav-section .nav-box, .nav-section .nav-box .nav-ul li a, .nav-section .nav-box .nav-ul li a::after, .product_section .grid-box .transform-item, button, .contact_section .form-group label, .contact_section .login_button, .min_footer .footer_content .social-box .social-ul li a, .min_footer .footer_content .footer_ul li a, .service_section .service_box, .service_section .service_box .img_box svg, .service_section .service_box .service_title, .service_section .service_box .prag, .scrollBottn, .application_section .feature_box, .contact_dit ul li a {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
 
-.product_section .product_ditales .name_price, .product_section .product_ditales .feather_box, .product_section .product_ditales .feather_box .feather_box_name, .product_box_min.list-viwe .product_box {
+.product_ditales .name_price, .product_ditales .feather_box, .product_ditales .feather_box .feather_box_name, .product_box_min.list-viwe .product_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
